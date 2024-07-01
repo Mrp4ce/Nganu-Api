@@ -1,10 +1,10 @@
 {
   "version": 2,
   "builds": [
-    { "src": "app/Controllers/Http/Hongkong/ResultController.js", "use": "@vercel/node" }
+    { "src": "start/routes.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api(.*)", 
-    "dest": "app/Controllers/Http/Hongkong/ResultController.js" }
+    { "src": "/(.*)", 
+    "dest": "start/routes.js" }
   ]
 }
