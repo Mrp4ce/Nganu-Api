@@ -17,10 +17,10 @@
 const Route = use('Route')
 
 Route.get('/', () => {
-  return { greeting: 'Hello world in JSON' }
+  return 'Hello World'
 })
 
-Route.group(()=>{
-  Route.get("index", 'Hongkong/ResultController.getResult').prefix("/api")
+// Route.group(()=>{
+//   Route.get("index", 'Hongkong/ResultController.getResult').prefix("/api")
   
-})
+// })
