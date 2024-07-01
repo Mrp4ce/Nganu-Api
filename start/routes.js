@@ -17,10 +17,10 @@
 const Route = use('Route')
 
 Route.get('/', () => {
-  return 'Hello World'
+  return 'Hello World from AdonisJs'
 })
 
-// Route.group(()=>{
-//   Route.get("index", 'Hongkong/ResultController.getResult').prefix("/api")
+Route.group(()=>{
+  Route.get("index", 'Hongkong/ResultController.getResult').prefix("/api")
   
-// })
+})
