@@ -4,10 +4,7 @@
     {
       "src": "app/Controllers/Http/Hongkong/ResultController.js",
       "use": "@vercel/node",
-      "env": {
-        "HOST": "0.0.0.0"
-      }
-    }
+        }
   ],
   "routes": [
     {
