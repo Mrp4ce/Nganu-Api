@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "server.js",
+      "src": "app/Controllers/Http/Hongkong/ResultController.js",
       "use": "@vercel/node",
       "env": {
         "HOST": "0.0.0.0"
@@ -12,7 +12,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "server.js"
+      "dest": "app/Controllers/Http/Hongkong/ResultController.js"
     }
   ]
 }
