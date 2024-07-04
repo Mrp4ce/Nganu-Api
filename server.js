@@ -17,9 +17,18 @@
 |     Make sure to pass a relative path from the project root.
 */
 
-const { Ignitor } = require('@adonisjs/ignitor')
+// const { Ignitor } = require('@adonisjs/ignitor')
 
-new Ignitor(require('@adonisjs/fold'))
+// new Ignitor(require('@adonisjs/fold'))
+//   .appRoot(__dirname)
+//   .fireHttpServer()
+//   .catch(console.error)
+
+
+import { Ignitor } from '@adonisjs/ignitor'
+import { fold } from '@adonisjs/fold'
+
+new Ignitor(fold)
   .appRoot(__dirname)
   .fireHttpServer()
   .catch(console.error)

@@ -5,8 +5,8 @@
   "description": "Adonisjs boilerplate for API server with pre-configured JWT",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "node ace test"
+    "start": "babel-node server.js",
+    "test": "babel-node ace test"
   },
   "keywords": [
     "adonisjs",
@@ -34,5 +34,13 @@
   },
   "autoload": {
     "App": "./app"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/preset-env": "^7.24.7"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"]
   }
 }
