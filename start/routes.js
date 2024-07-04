@@ -21,6 +21,6 @@ Route.get('/', () => {
 })
 
 Route.group(()=>{
-  Route.get("index", 'Hongkong/ResultController.getResult').prefix("/api")
+  Route.get("index", 'Hongkong/ResultController.getResult').prefix("api/")
   
 })

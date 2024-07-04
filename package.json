@@ -29,7 +29,8 @@
     "cheerio": "^1.0.0-rc.12",
     "fs": "^0.0.1-security",
     "git": "^0.1.5",
-    "jsdom": "^24.1.0"
+    "jsdom": "^24.1.0",
+    "nodejs": "^0.0.0"
   },
   "autoload": {
     "App": "./app"
